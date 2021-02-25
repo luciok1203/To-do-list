@@ -62,6 +62,7 @@ function paintGreeting(text) {
     button.classList.add("opaque");
   });
   greeting.addEventListener("mouseleave", function () {
+    console.log("?")
     button.classList.remove("opaque");
     button.classList.add("translucent");
   });
