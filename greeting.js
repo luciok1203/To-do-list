@@ -1,5 +1,5 @@
 const form = document.querySelector(".js-form"),
-  input = form.querySelector("#nameInput").autofocus,
+  input = form.querySelector("#nameInput"),
   greeting = document.querySelector(".js-greetings"),
   span = document.querySelector(".name"),
   button = document.querySelector(".edit");
@@ -36,7 +36,6 @@ function editUser() {
   greeting.classList.remove(SHOWING_CN);
   span.innerText = "";
   input.value = localStorage.getItem(USER_LS);
-  input.focus();
   askForName();
 }
 
