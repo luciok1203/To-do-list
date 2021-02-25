@@ -6,11 +6,14 @@ body {
   transition: 0.5s;
 }
 
-
 input, ::placeholder {
   text-align: center;
   background-color: transparent;
   color: #ffffff;
+}
+
+input:focus {
+  placeholdr = "";
 }
 
 ul {
