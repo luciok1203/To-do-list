@@ -47,6 +47,13 @@ button {
   visibility: visible;
 }
 
+.translucent {
+  opacity: 0.5;
+}
+.opaque {
+  opacity: 1;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
