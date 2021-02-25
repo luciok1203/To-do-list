@@ -36,6 +36,7 @@ function editUser() {
   greeting.classList.remove(SHOWING_CN);
   span.innerText = "";
   input.value = localStorage.getItem(USER_LS);
+  input.focus();
   askForName();
 }
 
