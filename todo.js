@@ -37,18 +37,18 @@ function paintToDo(text) {
   const newId = toDos.length;
   chkBtn.innerText = "✅";
   span.innerText = text;
-  chkBtn.classList.add("hidden");
+  chkBtn.classList.add("translucent");
   chkBtn.addEventListener("click", deleteTodo);
   li.classList.add("fadeIn");
   li.appendChild(chkBtn);
   li.appendChild(span);
   li.addEventListener("mouseenter", function () {
-    chkBtn.classList.remove("hidden");
-    chkBtn.classList.add("visible");
+    chkBtn.classList.remove("translucent");
+    chkBtn.classList.add("opaque");
   });
   li.addEventListener("mouseleave", function () {
-    chkBtn.classList.add("hidden");
-    chkBtn.classList.remove("visible");
+    chkBtn.classList.remove("opaque");
+    chkBtn.classList.add("translucent");
   });
   li.id = newId;
   toDoList.appendChild(li);
