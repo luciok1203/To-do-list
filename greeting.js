@@ -77,6 +77,7 @@ function loadName() {
 }
 
 function init() {
+  input.value = "";
   loadName();
 }
 
