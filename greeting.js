@@ -56,14 +56,14 @@ function paintGreeting(text) {
         : (18 <= hours && hours < 24) ? "Good evening"
           : "Good night";
   span.innerText = `${greetingWord}, ${text}!`;
-  button.classList.add("hidden");
+  button.classList.add("translucent");
   greeting.addEventListener("mouseenter", function () {
-    button.classList.remove("hidden");
-    button.classList.add("visible");
+    button.classList.remove("translucent");
+    button.classList.add("opaque");
   });
   greeting.addEventListener("mouseleave", function () {
-    button.classList.add("hidden");
-    button.classList.remove("visible");
+    button.classList.add("opaque");
+    button.classList.remove("translucent");
   });
   button.addEventListener("click", editUser);
 }
