@@ -1,5 +1,5 @@
 const form = document.querySelector(".js-form"),
-  input = form.querySelector("#nameInput"),
+  input = form.querySelector("#nameInput").autofocus,
   greeting = document.querySelector(".js-greetings"),
   span = document.querySelector(".name"),
   button = document.querySelector(".edit");
