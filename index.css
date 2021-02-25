@@ -13,7 +13,7 @@ input, ::placeholder {
 }
 
 input:focus {
-  placeholdr = "";
+  input.placeholdr = "";
 }
 
 ul {
