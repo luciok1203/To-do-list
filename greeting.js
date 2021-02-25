@@ -1,5 +1,5 @@
 const form = document.querySelector(".js-form"),
-  input = form.querySelector("input"),
+  input = form.querySelector("#nameInput"),
   greeting = document.querySelector(".js-greetings"),
   span = document.querySelector(".name"),
   button = document.querySelector(".edit");
